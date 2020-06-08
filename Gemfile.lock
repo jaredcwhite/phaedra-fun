@@ -34,6 +34,7 @@ GEM
       terminal-table (~> 1.8)
     bridgetown-paginate (0.14.1)
       bridgetown-core (= 0.14.1)
+    bson (4.9.2)
     colorator (1.1.0)
     concurrent-ruby (1.1.6)
     faraday (1.0.1)
@@ -55,6 +56,8 @@ GEM
       rb-inotify (~> 0.9, >= 0.9.10)
     mercenary (0.4.0)
     minitest (5.14.1)
+    mongo (2.12.1)
+      bson (>= 4.8.2, < 5.0.0)
     multipart-post (2.1.1)
     pathutil (0.16.2)
       forwardable-extended (~> 2.6)
@@ -82,6 +85,7 @@ PLATFORMS
 
 DEPENDENCIES
   bridgetown
+  mongo
   phaedra
 
 BUNDLED WITH
