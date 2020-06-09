@@ -7,7 +7,7 @@ class PhaedraFunction < Phaedra::Base
     client = SharedDb.client
     record = client[:myCollection].find.first
 
-    output = if env["PHAEDRA_ENV"] == "staging"
+    output = if ENV["PHAEDRA_ENV"] == "staging"
       "<p>You're on staging! #{record[:lets][:go]}</p>"
     else
       "<p>This is Quite Interesting. 😁</p>\n<p>#{record[:lets][:go]}!</p>\n"
