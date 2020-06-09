@@ -1,3 +1,4 @@
 .bridgetown-cache
 .bridgetown-webpack
 public
+node_modules
