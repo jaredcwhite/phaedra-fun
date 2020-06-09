@@ -61,7 +61,7 @@ GEM
     multipart-post (2.1.1)
     pathutil (0.16.2)
       forwardable-extended (~> 2.6)
-    phaedra (0.3.1)
+    phaedra (0.3.2)
       activesupport (~> 6.0)
       rack (~> 2.0)
     public_suffix (4.0.5)
