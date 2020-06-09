@@ -8,6 +8,6 @@ class PhaedraFunction < Phaedra::Base
     record = client[:myCollection].find.first
 
     response["Content-Type"] = "text/html; charset=utf-8"
-    "<p>This is Interesting. 😁</p>\n<p>#{record[:lets][:go]}!</p>\n"
+    "<p>This is Quite Interesting. 😁</p>\n<p>#{record[:lets][:go]}!</p>\n"
   end
 end

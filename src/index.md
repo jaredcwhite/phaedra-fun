@@ -4,4 +4,4 @@ layout: default
 
 Hello from **Bridgetown!**
 
-[Posts…](/posts)
+[View Posts…](/posts)
