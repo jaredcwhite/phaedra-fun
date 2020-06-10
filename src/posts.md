@@ -4,6 +4,8 @@ title: Posts
 permalink: /posts/
 ---
 
+# Posts Page
+
 <ul>
   {% for post in site.posts %}
     <li>
@@ -12,4 +14,7 @@ permalink: /posts/
   {% endfor %}
 </ul>
 
-If you have a lot of posts, you may want to consider adding [pagination](https://www.bridgetownrb.com/docs/content/pagination)!
+<hr />
+
+{:style="text-align:center"}
+[Return to Home](/)

@@ -5,13 +5,39 @@ body {
   background: $body-background;
   color: $body-color;
   font-family: sans-serif;
+  font-size: 120%;
+  transition: background 0.4s, color 0.4s;
+}
+
+a {
+  color: #059;
+  transition: color 0.4s;
 }
 
 h1, nav, footer {
   text-align: center;
 }
+h1 {
+  margin: 4rem 0;
+}
 
 main {
   margin: 4rem auto;
   max-width: 60rem;
+}
+
+.swup-transition-main {
+  transition: opacity .2s;
+}
+
+body.post {
+  background: #333;
+  color: #ccc;
+  a {
+    color: #9CF;
+  }
+}
+
+hr {
+  margin: 5rem 1rem;
 }
