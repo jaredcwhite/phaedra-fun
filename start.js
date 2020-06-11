@@ -9,7 +9,8 @@ const port = 4001
 /////////////////
 concurrently([
   { command: "yarn webpack-dev", name: "Webpack", prefixColor: "yellow"},
-  { command: "sleep 4; yarn serve --port " + port, name: "Bridgetown", prefixColor: "green"},
+  { command: "sleep 4; bundle exec bridgetown build -w", name: "Bridgetown", prefixColor: "magenta"},
+  { command: "sleep 4; rackup -p " + port, name: "Phaedra", prefixColor: "green"},
   { command: "sleep 8; yarn sync", name: "Live", prefixColor: "blue"}
 ], {
   restartTries: 3,
