@@ -4,7 +4,7 @@ layout: default
 
 # Home Page
 
-Hello from **Bridgetown!**
+Hello from **Bridgetown!** Running on Fly.io…
 
 [View Posts…](/posts)
 

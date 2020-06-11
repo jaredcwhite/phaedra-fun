@@ -1,3 +1,5 @@
 url: ""
 
 permalink: simple
+
+trigger_deploy_iteration: 2

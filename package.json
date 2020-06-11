@@ -9,7 +9,8 @@
     "webpack-dev": "webpack --mode development -w",
     "deploy": "yarn webpack-build && yarn build",
     "sync": "node sync.js",
-    "start": "node start.js"
+    "start": "node start.js",
+    "fly-production": "flyctl deploy --build-arg PHAEDRA_ENV=production"
   },
   "devDependencies": {
     "@babel/core": "^7.9.0",
