@@ -1,4 +1,4 @@
 .bridgetown-cache
 .bridgetown-webpack
-public
+output
 node_modules

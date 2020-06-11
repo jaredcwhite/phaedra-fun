@@ -59,12 +59,15 @@ GEM
     mongo (2.12.1)
       bson (>= 4.8.2, < 5.0.0)
     multipart-post (2.1.1)
+    nio4r (2.5.2)
     pathutil (0.16.2)
       forwardable-extended (~> 2.6)
-    phaedra (0.3.2)
+    phaedra (0.4.1)
       activesupport (~> 6.0)
       rack (~> 2.0)
     public_suffix (4.0.5)
+    puma (4.3.5)
+      nio4r (~> 2.0)
     rack (2.2.2)
     rb-fsevent (0.10.4)
     rb-inotify (0.10.1)
@@ -86,7 +89,8 @@ PLATFORMS
 DEPENDENCIES
   bridgetown
   mongo
-  phaedra
+  phaedra (~> 0.4.0)
+  puma
 
 BUNDLED WITH
    1.17.3
