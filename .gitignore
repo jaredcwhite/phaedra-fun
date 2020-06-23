@@ -2,3 +2,4 @@
 .bridgetown-webpack
 output
 node_modules
+.env

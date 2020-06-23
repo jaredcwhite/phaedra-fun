@@ -1,10 +1,9 @@
 require "phaedra"
-require "mongo"
 require_relative "../lib/db"
 
 class PhaedraFunction < Phaedra::Base
   def get(params)
-    client = SharedDb.client
+    client = SharedDb.custom_client
     record = client[:myCollection].find.first
 
     output = if ENV["PHAEDRA_ENV"] == "staging"

@@ -39,17 +39,16 @@ USER $USER_ID:$GROUP_ID
 WORKDIR $APP_DIR
 
 # COPY is run as a root user, not as the USER defined above, so we must chown it
-COPY --chown=$USER_ID:$GROUP_ID Gemfile* $APP_DIR/
+COPY --chown=$USER_ID:$GROUP_ID Gemfile* ./
 RUN gem install bundler
 RUN bundle install
 
 # For webpacker / node_modules
-COPY --chown=$USER_ID:$GROUP_ID package.json $APP_DIR
-COPY --chown=$USER_ID:$GROUP_ID yarn.lock $APP_DIR
-
+COPY --chown=$USER_ID:$GROUP_ID package.json .
+COPY --chown=$USER_ID:$GROUP_ID yarn.lock .
 RUN yarn install
 
-COPY . .
+COPY --chown=$USER_ID:$GROUP_ID . .
 RUN yarn deploy
 
 CMD ["bundle", "exec", "rackup", "-p", "8080", "-o", "0.0.0.0"]

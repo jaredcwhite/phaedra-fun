@@ -18,6 +18,9 @@ module.exports = {
   },
   resolve: {
     extensions: [".js", ".jsx"],
+    alias: {
+      liquidComponents: path.resolve(__dirname, "src/_components")
+    }
   },
   plugins: [
     new MiniCssExtractPlugin({

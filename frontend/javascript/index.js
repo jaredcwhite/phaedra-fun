@@ -11,5 +11,6 @@ const swup = new Swup({
 })
 
 import "../styles/index.scss"
+import "liquidComponents"
 
 console.info("Bridgetown is loaded!")
